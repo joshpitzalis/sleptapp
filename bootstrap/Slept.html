@@ -52,6 +52,10 @@
       .title {
         margin-top: 100px;
       }
+
+      #footer {
+        background-color: grey;
+      }
     </style>
   </head>
   <body>
@@ -66,27 +70,16 @@
           <a class="navbar-brand">Slept</a>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#topContainer">Home</a></li>
             <li><a href="#details">About</a></li>
-            <li><a href="#footer">Download The App</a></li>
+            <li><a href="#footer">Download the App</a></li>
           </ul>
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-            <input type="email" palceholder="email" class="form-control" />
-            </div>
-            <div class="form-group">
-            <input type="password" palceholder="password" class="form-control" />
-            </div>
-            <div class="form-group">
-            <button type="submit" class="btn btn-success">Log In</button>
-            </div>
-          </form>
         </div>
       </div>
     </div>
 
-    <div class="container" id="topContainer">
+    <div class="container contentContainer" id="topContainer">
       <div class="row">
         <div class="col-md-6 col-md-offset-3" id="topRow">
           <h1 class="marginTop">Enjoy The Best Night Of Sleep You Can Remember</h1>
@@ -118,31 +111,35 @@
       </div>
     </div>
 
-    <div class="container contentContainer">
+    <div class="container">
       <div class="row center">
-        <h1 class="title">100% Natural</h2>
-        <p>Learn how to focus your mind and relax your body before bed so that you can enjoy hours of deep, restful sleep without prescription medication.</p>
+        <h1 class="title">Benefits</h2>
+        <p>Why thsi app rocks</p>
     </div>
 
-
-      <div class="benefits">
-      <div id="benefit1">
-
+    <div class="container contentContainer">
+      <div class="row">
+        <div class="col-md-4">
+          <h2><span class="glyphicon glyphicon-music"> </span> 100% Natural</h2>
+            <p>Learn how to focus your mind and relax your body before bed so that you can enjoy hours of deep, restful sleep without prescription medication.</p>
+          <button class="btn btn-success">Sign Up!</button>
         </div>
-      <div id="benefit2">
-        <h2>Completely Silent</h2>
-        <p>The App is completely silent which means it won't disturb anyone else in the room. Just synchronise your breathing to the App's rhythmic lighting.</p>
-      </div>
-      <div id="benefit3">
-        <h2>Effectiveness Guaranteed</h2>
-        <p>Try the Sleep Assistant for one week and if you don't enjoy the best night of sleep can remember then you get your 100% of your money back.</p>
-      </div>
-      </div>
-      <div id="cta">Available on teh App Store</div>
-      <div id="footer">© 2014 Creative Skunk</div>
 
+        <div class="col-md-4">
+          <h2><span class="glyphicon glyphicon-music"> </span> Completely Silent</h2>
+          <p>The App is completely silent which means it won't disturb anyone else in the room. Just synchronise your breathing to the App's rhythmic lighting.</p>
+          <button class="btn btn-success">Sign Up!</button>
+        </div>
 
+        <div class="col-md-4">
+          <h2><span class="glyphicon glyphicon-music"> </span>Effectiveness Guaranteed</h2>
+          <p>Try the Sleep Assistant for one week and if you don't enjoy the best night of sleep can remember then you get your 100% of your money back.</p>
+          <button class="btn btn-success">Sign Up!</button>
+        </div>
+      </div>
+    </div>
 
+  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
