@@ -23,9 +23,34 @@
 
       #topContainer {
         background-image: url("images/baby.jpg");
-        height: 300px;
         width: 100%;
         background-size: cover;
+      }
+
+      #topRow {
+        margin: 100px;
+        text-align: center;
+        color: white;
+      }
+
+      #topRow h1{
+        font-size: 300%;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .marginTop {
+        margin-top: 30px;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .title {
+        margin-top: 100px;
       }
     </style>
   </head>
@@ -62,23 +87,47 @@
     </div>
 
     <div class="container" id="topContainer">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3" id="topRow">
+          <h1 class="marginTop">Enjoy The Best Night Of Sleep You Can Remember</h1>
+          <p id="blurb">
+            Do you long for more sleep? Do you just put up with it? Would you like to do something about it?
+
+            All you need to do is synchronise your breathing to the soft rhythmic light and the App will help you fall asleep in record time.
+
+            Make sure your bedroom is dark, place your phone beside your bed, lie on your back and stare at the ceiling as you synchronise your breath with the App's lighting.
+
+            Once your eyes start to droop you can shut your eyes and let your bodies natural breathing take over.
+
+            BONUS: The App is completely silent which means it works without having to use ear phones and, if you share your bed, it won't disturb your partner.
+            </p>
+
+            <p class="bold marginTop">
+              Interested? Join our mailing list.
+            </p>
+            <form class="marginTop">
+              <div class="input-group">
+                <span class="input-group-addon" >
+                  @
+                </span>
+              <input type="email" class="form-control" placeholder="Your Email" />
+              </div>
+              <input type="submit" class="btn btn-success btn-lg marginTop"/>
+            </form>
+        </div>
+      </div>
     </div>
 
-    <div id="byline">Enjoy The Best Night Of Sleep You Can Remember.</div>
-    <div id="blurb"> Do you long for more sleep? Do you just put up with it? Would you like to do something about it?
+    <div class="container contentContainer">
+      <div class="row center">
+        <h1 class="title">100% Natural</h2>
+        <p>Learn how to focus your mind and relax your body before bed so that you can enjoy hours of deep, restful sleep without prescription medication.</p>
+    </div>
 
-        All you need to do is synchronise your breathing to the soft rhythmic light and the App will help you fall asleep in record time.
-
-        Make sure your bedroom is dark, place your phone beside your bed, lie on your back and stare at the ceiling as you synchronise your breath with the App's lighting.
-
-        Once your eyes start to droop you can shut your eyes and let your bodies natural breathing take over.
-
-        BONUS: The App is completely silent which means it works without having to use ear phones and, if you share your bed, it won't disturb your partner.</div>
 
       <div class="benefits">
       <div id="benefit1">
-        <h2>100% Natural</h2>
-        <p>Learn how to focus your mind and relax your body before bed so that you can enjoy hours of deep, restful sleep without prescription medication.</p>
+
         </div>
       <div id="benefit2">
         <h2>Completely Silent</h2>
@@ -99,7 +148,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script>
-    $("#topContainer").css("min-height", $(window).height());
+    $(".contentContainer").css("min-height", $(window).height());
     </script>
   </body>
   </body>
